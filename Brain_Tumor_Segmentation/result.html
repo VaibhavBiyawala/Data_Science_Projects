@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: 600px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Result</h1>
+    <img src="{{ url_for('static', filename='pred.jpg') }}" alt="Output Image">
+<h3>Prediction Summary</h3>
+Our website has processed your uploaded MRI image to show where the brain tumor is. We've outlined the areas affected by the tumor to help understand its location and size.
+
+<h3>Key Findings</h3>
+Tumor Location: We've pinpointed the location of the tumor in the brain.<br>
+
+Size Estimation: Our system gives an idea of how big the tumor is.<br>
+
+Helpful Visualization: The results are shown clearly, making it easy for doctors to interpret.
+    <h4>Important Note</h4>
+While our tool provides valuable insights, it's essential not to rely solely on these results. We recommend consulting a doctor or medical professional for accurate diagnosis and treatment planning.
+
+<h4>Conclusion</h4>
+Our tool provides a straightforward way to see where the brain tumor is. It's designed to assist doctors in making informed decisions about treatment options for patients.
+<br>
+<br>
+</body>
+</html>
