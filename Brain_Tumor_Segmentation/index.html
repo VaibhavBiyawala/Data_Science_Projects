@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload MRI Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+	    max-height: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+	    text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+  	h3 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 103%;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+	<h1>Brain Tumor Segmentation</h1>
+        <p>"Welcome to our Brain Tumor Segmentation Website! We provide cutting-edge technology to accurately analyze and segment brain tumors from MRI images. Our platform offers precise results and intuitive user experience, empowering medical professionals with essential diagnostic insights for better patient care."</p>
+        <h3>Upload MRI Image</h3>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
