@@ -6,7 +6,9 @@ To address this issue, we have developed a U-Net based Convolutional Neural Netw
 
 #### Key Achievements:
 - **Training Accuracy:** 99.75%
+- **Training Loss:** 1.46%
 - **Validation Accuracy:** 99.33%
+- **Validation Loss:** 2.06%
 - **Testing Accuracy:** 99.64%
 - **Testing specificity:** 99.88% 
 
