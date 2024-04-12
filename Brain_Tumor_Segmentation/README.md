@@ -7,5 +7,8 @@ To address this issue, we have developed a U-Net based Convolutional Neural Netw
 #### Key Achievements:
 - **Training Accuracy:** 99.75%
 - **Validation Accuracy:** 99.33%
+- **Testing Accuracy:** 99.64%
+- **Testing specificity:** 99.88% 
 
 Our model demonstrates high accuracy in both training and validation phases, offering a promising solution for accurately detecting and segmenting brain tumors in MRI scans.
+Additionaly to this achievements we have purposed an simple web interface where an doctor can simply upload an MRI scan of Brain an our model will return an segmented tumor portion within an fraction of second.
